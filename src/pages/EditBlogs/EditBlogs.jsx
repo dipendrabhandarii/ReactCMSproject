@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../../components/Navbar/Navbar";
 
 const EditBlogs = () => {
   return (
-    <div>EditBlogs</div>
-  )
-}
+    <div>
+      <Navbar />
+      EditBlogs
+    </div>
+  );
+};
 
-export default EditBlogs
+export default EditBlogs;
