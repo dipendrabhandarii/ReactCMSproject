@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import "./AllBlogs.css";
 import avatarImage from "c:/Users/user/Pictures/Picsart_23-01-31_09-32-02-946.jpg";
 import axios from "axios";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const AllBlogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -21,6 +22,7 @@ const AllBlogs = () => {
   useEffect(() => {
     fetchBlogs();
   }, []);
+  const navigate= useNavigate()
 
   return (
     <div>
@@ -30,6 +32,7 @@ const AllBlogs = () => {
           display: "flex",
           justifyContent: "space-around",
           flexWrap: "wrap",
+          textAlign:"center"
         }}
       >
         {blogs.map((blog) => {
@@ -40,8 +43,9 @@ const AllBlogs = () => {
                 <h4>
                   <b>{blog.title}</b>
                 </h4>
-                <p>{blog.description}</p>
+                <p style={{color:"red",textAlign:"center"}}>{blog.description}</p>
                 <p>{blog.createdAt}</p>
+                <p  style={{cursor:"pointer"}} onClick={()=>navigate("/SingleBlogs/" + blog.id)} >See More</p>
               </div>
             </div>
           );
