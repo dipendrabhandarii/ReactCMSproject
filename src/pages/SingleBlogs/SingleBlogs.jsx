@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./SingleBlogs.css";
 import Navbar from "../../components/Navbar/Navbar";
+import avatarImage from "c:/Users/user/Pictures/Picsart_23-01-31_09-32-02-946.jpg";
 
 const SingleBlogs = () => {
   const { id } = useParams();
@@ -45,10 +46,8 @@ const SingleBlogs = () => {
         <img src={blog?.avatar} alt="Author Avatar" className="avatar" />
         <button
           style={{ textAlign: "right", marginLeft: "50px" }}
-          onClick={deleteBlog}
-        >
-          Delete
-        </button>
+          onClick={deleteBlog} >Delete</button>
+          <button style={{marginLeft:"55px"}} onClick={()=>navigate("/EditBlogs/" +id)}>Edit</button>
       </div>
     </div>
   );

@@ -13,12 +13,15 @@ ul {
 
 li {
   display: inline;
+  font-family: 'Courier New', Courier, monospace;
+ 
 }
 
 a {
   text-decoration: none;
   color: #333;
   padding: 5px 10px;
+  font: bolder;
 }
 
 a:hover {

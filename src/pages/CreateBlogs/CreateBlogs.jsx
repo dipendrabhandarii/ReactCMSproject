@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import './CreateBlogs.css'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import avatarImage from "c:/Users/user/Pictures/Picsart_23-01-31_09-32-02-946.jpg";
 
 const CreateBlogs = () => {
   const [title,setTitle]= useState("")
@@ -33,8 +34,9 @@ const CreateBlogs = () => {
   return (
     <div>
       <Navbar />
-      <form onSubmit={createBlog} >
-        <div className="form-group">
+      <form onSubmit={createBlog} style={{alignContent:"center", textAlign:"center"}}>
+        <div className="form-group" >
+          <h1>Add Blog</h1>
           <label htmlFor="title">Title:</label>
           <input type="text" id="title" name="title"  required onChange={(e)=>setTitle(e.target.value)}/>
         </div>
