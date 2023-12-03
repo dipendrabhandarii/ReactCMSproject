@@ -1,30 +1,21 @@
+/* Navbar.css */
+
 nav {
-  background-color: #f2f2f2;
+  background-color: #333;
+  color: #fff;
   padding: 10px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-li {
-  display: inline;
-  font-family: 'Courier New', Courier, monospace;
- 
+  
 }
 
 a {
+  color: #fff;
   text-decoration: none;
-  color: #333;
-  padding: 5px 10px;
-  font: bolder;
+  margin: 0 10px;
+  margin-left: 400px;
+  transition: color 0.3s;
 }
 
 a:hover {
-  background-color: #333;
-  color: #fff;
+  text-decoration: underline;
+  color: #ffcc00; /* Change the color on hover */
 }
