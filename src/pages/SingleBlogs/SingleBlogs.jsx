@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./SingleBlogs.css";
 import Navbar from "../../components/Navbar/Navbar";
-import avatarImage from "c:/Users/user/Pictures/Picsart_23-01-31_09-32-02-946.jpg";
+
 
 const SingleBlogs = () => {
   const { id } = useParams();
