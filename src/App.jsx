@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import AllBlogs from './pages/AllBlogs/AllBlogs'
+import AllBlogs from './pages/AllBlogs/AllBlogs';
 import CreateBlogs from './pages/CreateBlogs/CreateBlogs';
 import EditBlogs from './pages/EditBlogs/EditBlogs';
 import SingleBlogs from './pages/SingleBlogs/SingleBlogs';
