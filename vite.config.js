@@ -5,8 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['react', 'react-dom', 'other-module']
-      // Add the module name here
-    }
-  }
+      external: ['c:/Users/user/Pictures/Picsart_23-01-31_09-32-02-946.jpg'], // Add other external modules if needed
+    },
+  },
 });
