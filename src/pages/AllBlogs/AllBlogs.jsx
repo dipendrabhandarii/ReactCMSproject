@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import "./AllBlogs.css";
-import avatarImage from "c:/Users/user/Pictures/Picsart_23-01-31_09-32-02-946.jpg";
 import axios from "axios";
 import { Navigate, useNavigate } from "react-router-dom";
 
