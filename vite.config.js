@@ -5,7 +5,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['module-name'] // Add the module name here
+      external: ['react', 'react-dom', 'other-module']
+      // Add the module name here
     }
   }
 });
